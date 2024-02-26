@@ -9,7 +9,7 @@ vsearch --cluster_fast SEQ.fas --id 0.985 \
 --sizeout --minseqlength 1
 ```
 
-Mapped reads to count how many OTUS there are per sample:
+Map reads to count how many OTUS there are per sample:
 
 ```
 vsearch --usearch_global SEQ.fas --db SEQ_otu.fas \
@@ -18,7 +18,7 @@ vsearch --usearch_global SEQ.fas --db SEQ_otu.fas \
 
 ```
 
-To assign taxonomy I used the blast algorithm against [UNITE](https://unite.ut.ee/repository.php) database (General FASTA release):
+To assign taxonomy, I used the blast algorithm against [UNITE](https://unite.ut.ee/repository.php) database (General FASTA release):
 
 Format the database:
 
